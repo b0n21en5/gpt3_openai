@@ -32,14 +32,14 @@ const Navbar = () => {
       </div>
       <div className="gpt3__navbar-menu">
         { toggleMenu
-        ?<RiCloseLine color="#fff" size={27} onClkick={() => setToggleMenu(false)} />
-        :<RiMenu3Line color="#fff" size={27} onClkick={() => setToggleMenu(true)} />
+        ?<RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
+        :<RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />
          }
          { toggleMenu && (
           <div className="gpt3__navbar-menu-container scale-up-center">
             <div className="gpt3__navbar-menu-container-links">
               <Menu/>
-              <div className="gpt3__navbar-sign">
+              <div className="gpt3__navbar-menu-container-links-sign">
                 <p>Sign in</p>
                 <button type="button">Sign up</button>
               </div>
